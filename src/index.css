@@ -1,13 +1,142 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=Tiro+Devanagari+Marathi&display=swap');
+
+
+
+body, .App{
+  width: 100%;
+  background-color: #363331;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+body, .App{
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  }
+
+
+.mark{
+    width: 300px;
+}
+
+.mark a{
+    font-size: 30px;
+    width: 300px;
+    font-weight: 300;
+    font-family: 'Tiro Devanagari Marathi', serif;
+    color: #ffffff;
+    text-decoration:none;
+
+}
+
+
+
+
+
+.container{
+    display:flex;
+    padding: 25px;
+    background-color: #363331;
+}
+
+#land{
+    width: 100%;
+}
+
+.header{
+    height: 90px;
+    display: flex;
+    background-color: #363331;
+    align-items: center;
+    padding: 0% 15%;
+}
+
+.header button{
+    width: 200px;
+    height: 100%;
+}
+
+footer{
+    max-height: 100px;
+    min-height: 100px;
+    padding: 0% 10%;
+}
+
+.icon-footer{
+    margin-top: 5%;
+    padding: 5% 5% 5% 5%;
+    border-top: 2px solid rgb(255, 255, 255);
+    color: #ffff;
+    display: flex;
+}
+
+.info-footer{
+    padding: 5% 5% 5% 5%;
+    border-top: 2px solid rgb(255, 255, 255);
+    color: #ffff;
+    display: flex;
+}
+
+
+
+.cen{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    font-family: 'Tiro Devanagari Marathi', serif;
+}
+
+.zone img{
+    max-width: 100%;
+    max-height: 750px;
+}
+
+.cen div{
+    margin: 0px 15px 0px 15px;
+}
+
+
+.cen a{
+    color: #ffffff;
+    text-decoration:none;
+}
+
+.icon img{
+    object-fit: contain;
+    max-width: 50px;
+}
+
+.icon{
+    margin: 0px 15px;
+}
+
+.galleryextend{
+    position: absolute;
+    z-index: 2;
+    height: 20px;
+    background-color: #363331;
+    opacity: 75%;
+    align-items: center;
+    transition-duration: 500ms;
+    transition-property: visibility;
+}
+
+.galleryextend div{
+    margin: 0px 15px 0px 15px;
+    
+}
+
+.galleryextend a{
+    color: #ffffff;
+    text-decoration:none;
+    font-family: 'Tiro Devanagari Marathi', serif;
+}
+
+.gallery {
+    align-items: center;
+    justify-items: center;
 }

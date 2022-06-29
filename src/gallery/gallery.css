@@ -1,0 +1,67 @@
+
+.galleryheader{
+    text-align: right;
+    padding: 2% 10% 0 10%;
+    background-color: #363331;
+}
+
+.galleryborder{
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding: 0% 5% 2% 5%;
+}
+
+.gallerycontent{
+    display: flex;
+    padding:0 10% 5% 10%;
+}
+
+.gallerycontent img{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    object-fit: scale-down;
+    margin: 0 2%;
+}
+
+.galleryborder button{
+    margin: 0px 15px 0px 15px;
+    background-color: #363331;
+    color: #fff;
+    box-shadow:none;
+    border:1px solid rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Tiro Devanagari Marathi', serif;
+}
+
+.gallerysidebar{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    padding: 5% 1%;
+}
+
+.photolist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallerysidebar li{
+    list-style: none;
+    margin-block-start: 0m;
+    margin-block-end: 30px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0;
+    color: #fff;
+    text-align: left;
+}
+
+.gallerysidebar ul{
+    justify-content: center;
+    display: block;
+    list-style-type: disc;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
