@@ -3,19 +3,11 @@ import {useSelector, useDispatch, Provider} from "react-redux";
 import { configureStore, createSlice } from '@reduxjs/toolkit'
 import { store } from "../store";
 
-const galleryinitialstate = ['01.jpg','01.jpg','01.jpg','01.jpg','01.jpg','01.jpg','01.jpg','01.jpg','01.jpg','01.jpg','01.jpg'];
+const galleryinitialstate = ['01.jpg','02.jpg','03.jpg','04.jpg','05.jpg','06.jpg','01.jpg','02.jpg','03.jpg','04.jpg','05.jpg'];
 
 
 
-export const galleryreducer = (state=galleryinitialstate, action) =>{
-    switch(action.type){
-        case 'getfilm':
-            return state.photo.filter(item=> item.includes('film')===false);
 
-        case 'getdigital':
-            return state.photo.filter(item=> item.includes('film')===false);
-    }
-};
 
 export const gallery = createSlice({
     name:'gallery',
@@ -32,17 +24,3 @@ export const gallery = createSlice({
         }
     }
 })
-
-export const getfilm = () =>{
-    return {type:'getfilm'}
-}
-
-export const getdigital = () =>{
-    return {type:'getdigital'}
-}
-
-const Gallerycomponent = () =>{
-    return(
-        <div></div>
-    )
-}

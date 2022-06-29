@@ -12,7 +12,7 @@ function App() {
         <div className="App">
         <div className="header">
             <div className="mark">
-                <a href="./test01.html">LinSJ Studio</a>
+                <a><Link to="/">LinSJ Studio</Link></a>
             </div>   
             <div className="cen">
                 <div><Link to="/">Home</Link></div>
@@ -33,7 +33,7 @@ function App() {
         <footer>
             <div className="icon-footer">
                 <div className="icon">
-                    <a href="https://www.facebook.com/" target={"_blank"}><img src={require("./photo/facebook.png")} /></a>
+                    <a href="https://www.facebook.com/jhengwei.lin" target={"_blank"}><img src={require("./photo/facebook.png")} /></a>
                 </div>
                 <div className="icon">
                     <a href="https://www.instagram.com/linsjphoto/" target={"_blank"}><img src={require("./photo/instagram.png")} /></a>

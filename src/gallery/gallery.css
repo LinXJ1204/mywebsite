@@ -1,13 +1,12 @@
 
 .galleryheader{
     text-align: right;
-    padding: 2% 10% 0 10%;
+    padding: 0 10% 0 10%;
     background-color: #363331;
 }
 
 .galleryborder{
     border-bottom: 2px solid rgb(255, 255, 255);
-    padding: 0% 5% 2% 5%;
 }
 
 .gallerycontent{
@@ -23,15 +22,6 @@
     margin: 0 2%;
 }
 
-.galleryborder button{
-    margin: 0px 15px 0px 15px;
-    background-color: #363331;
-    color: #fff;
-    box-shadow:none;
-    border:1px solid rgb(255, 255, 255);
-    text-align: center;
-    font-family: 'Tiro Devanagari Marathi', serif;
-}
 
 .gallerysidebar{
     width: 25%;
