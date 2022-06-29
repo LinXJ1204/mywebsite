@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=Tiro+Devanagari+Marathi&display=swap');
 
 .galleryheader{
     text-align: right;
@@ -15,9 +16,8 @@
 }
 
 .gallerycontent img{
-    width: 250px;
-    height: 250px;
-    overflow: hidden;
+    width: 300px;
+    height: 300px;
     object-fit: scale-down;
     margin: 0 2%;
 }
@@ -27,7 +27,9 @@
     width: 25%;
     display: flex;
     justify-content: center;
-    padding: 5% 1%;
+    padding: 2% 1% 5% 0%;
+    font-family: 'Tiro Devanagari Marathi', serif;
+    min-width: 150px;
 }
 
 .photolist{
@@ -45,13 +47,46 @@
     padding-inline-start: 0;
     color: #fff;
     text-align: left;
+    min-height: 25px;
 }
 
 .gallerysidebar ul{
     justify-content: center;
     display: block;
-    list-style-type: disc;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 0px;
+    font-size: 21px;
+}
+
+.sidebarchoice button{
+    background-color: #363331;
+    border: none;
+    padding: 0 5px 0 5px;
+    position: relative;
+    bottom: 1px;
+}
+
+.sidebarchoice{
+    display: flex;
+}
+
+.sidebarchoice img{
+    border: none;
+    max-height: 20px;
+    max-width: 20px;
+}
+
+.childlist{
+    position: relative;
+    left: 10px;
+    margin-block-start: 15px;
+    margin-block-end: 15px;
+    font-size: 14px;
+}
+
+.childlist li{
+    font-size: 14px;
+    opacity: 75%;
+    font-weight: 100;
 }

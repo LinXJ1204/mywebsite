@@ -5,19 +5,9 @@ import './gallery.css';
 import { store } from "../store";
 import { gallery, getfilm, getdigital } from "./gallerySlice";
 import { gallerysidebarfilmSlice, gallerysidebardigitalSlice, Extendfilm } from "./gallerysidebar";
+import "animate.css";
 
-
-function filmhandler(){
-    store.dispatch(gallery.actions.getfilm());
-    store.dispatch(gallerysidebarfilmSlice.actions.toggle());
-}
-
-function digitalhandler(){
-    store.dispatch(gallery.actions.getdigital());
-    store.dispatch(gallerysidebardigitalSlice.actions.toggle());
-    console.log(store.getState()['gallerysidebardigital'])
-}
-
+const directicon = ['../photo/angle-small-right-free-icon-font.png', '../photo/angle-small-down-free-icon-font.png'];
 
 const Gallerycomponent = () =>{
     const photolist = useSelector(()=> {return store.getState('photo').gallery});
@@ -39,14 +29,20 @@ const Gallerycomponent = () =>{
                             <a onClick={()=>(store.dispatch(gallery.actions.getall()))}>All</a>
                         </li>
                         <li>
-                            <a onClick={digitalhandler}>Digital</a>
-                            <ul>
+                            <div className="sidebarchoice">
+                                <a onClick={()=>(store.dispatch(gallery.actions.getdigital()))}>Digital</a>
+                                <button onClick={()=>(store.dispatch(gallerysidebardigitalSlice.actions.toggle()))}>{!digitaltoggle&&<img src={require('../photo/angle-small-right-free-icon-font.png')}></img>}{digitaltoggle&&<img src={require('../photo/angle-small-down-free-icon-font.png')}></img>}</button>
+                            </div>
+                            <ul className='childlist'>
                                 {digitaltoggle&&<Extendfilm />}
                             </ul>
                         </li>
                         <li>
-                            <a onClick={filmhandler}>Film</a>
-                            <ul>
+                            <div className="sidebarchoice">
+                                <a onClick={()=>(store.dispatch(gallery.actions.getfilm()))}>Film</a>
+                                <button onClick={()=>(store.dispatch(gallerysidebarfilmSlice.actions.toggle()))}>{!filmtoggle&&<img src={require('../photo/angle-small-right-free-icon-font.png')}></img>}{filmtoggle&&<img src={require('../photo/angle-small-down-free-icon-font.png')}></img>}</button>
+                            </div>
+                            <ul className='childlist'>
                                 {filmtoggle&&<Extendfilm />}
                             </ul>
                         </li>
