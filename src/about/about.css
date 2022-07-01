@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=Tiro+Devanagari+Marathi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap');
+
+
+
+.profilephoto img{
+    position: relative;
+    max-width: 300px;
+    max-height: 1000px;
+    overflow: hidden;
+    bottom: 10px;
+}
+
+
+.profilephoto{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.aboutheader{
+    text-align: right;
+    padding: 0 10% 0 10%;
+    background-color: #363331;
+}
+
+.aboutborder{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.aboutcontent{
+    display: flex;
+    padding:5% 10% 5% 10%;
+    justify-content: center;
+    color: white;
+    font-family: 'Tiro Devanagari Marathi', serif;
+}
+
+.somethingabout{
+    width: 50%;
+    padding: 0 5%;
+    border-left: 2px #ffff;
+}
+
+.myname a{
+    opacity: 75%;
+}
+
+.myname h1{
+    margin-bottom: 0;
+    margin-top: 0px;
+}

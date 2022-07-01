@@ -4,7 +4,9 @@ import Gallerycomponent from './gallery/gallery';
 import "swiper/css/bundle";
 import "./home/home.css";
 import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
-
+import {store} from './store';
+import {gallery} from './gallery/gallerySlice';
+import {About} from './about/about';
 
 function App() {
   return (
@@ -17,7 +19,7 @@ function App() {
             <div className="cen">
                 <div><Link to="/">Home</Link></div>
                 <div className="about"><Link to="/about">About</Link></div>
-                <div className='gallery'>
+                <div className='gallery' onClick={()=>(store.dispatch(gallery.actions.getall()))}>
                     <Link to="/gallery">Gallery</Link>
                 </div>
                 <div className="equipment"><Link to="/equipment">Equipment</Link></div>
@@ -27,6 +29,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Bodycomponent />} />
             <Route path="/gallery" element={<Gallerycomponent reset={true}/>}></Route>
+            <Route path='/about' element={<About />}></Route>
         </Routes>
         
         

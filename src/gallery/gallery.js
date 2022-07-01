@@ -26,7 +26,7 @@ const Gallerycomponent = () =>{
                 <div className="gallerysidebar">
                     <ul>
                         <li>
-                            <a onClick={()=>(store.dispatch(gallery.actions.getall()))}>All</a>
+                            <a style={{cursor: 'pointer'}} onClick={()=>(store.dispatch(gallery.actions.getall()))}>All</a>
                         </li>
                         <li>
                             <div className="sidebarchoice">
@@ -50,7 +50,7 @@ const Gallerycomponent = () =>{
                 </div>
                 <div className="photolist">
                     {photolist.map((item)=>(
-                        <img src={require(`../photo/${item}`)} />
+                        <img key={item} src={require(`../photo/${item}`)} />
                     ))}
                 </div>
                 
