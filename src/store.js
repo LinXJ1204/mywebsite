@@ -3,6 +3,7 @@ import {useSelector, useDispatch, Provider} from "react-redux";
 import { configureStore, createSlice } from '@reduxjs/toolkit'
 import { gallery, galleryreducer } from "./gallery/gallerySlice";
 import { gallerysidebarfilmSlice, gallerysidebardigitalSlice } from "./gallery/gallerysidebar";
+import { pageSlice } from "./gallery/pageSlice";
 
 
 export const store = configureStore({
@@ -10,5 +11,6 @@ export const store = configureStore({
         gallery: gallery.reducer,
         gallerysidebarfilm: gallerysidebarfilmSlice.reducer,
         gallerysidebardigital: gallerysidebardigitalSlice.reducer,
+        pagecontroler: pageSlice.reducer,
     }
 });

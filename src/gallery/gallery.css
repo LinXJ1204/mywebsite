@@ -12,8 +12,8 @@
 
 .gallerycontent{
     display: flex;
-    padding:0 10% 5% 10%;
-
+    padding:0 10% 0% 10%;
+    margin-bottom: 5%;
     min-height: 1500px;
 }
 
@@ -105,4 +105,27 @@
     opacity: 75%;
     font-weight: 100;
     cursor: pointer;
+}
+
+.pagecontroler{
+    display: flex;
+    margin-top: 50px;
+    justify-content: end;
+    padding: 0 13% 1% 13%;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Tiro Devanagari Marathi', serif;
+}
+
+.page{
+    padding: 0 1% 0% 0%;
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.pagecontroler img{
+    position: relative;
+    object-fit: scale-down;
+    max-width: 12px;
+    max-height: 12px;
 }

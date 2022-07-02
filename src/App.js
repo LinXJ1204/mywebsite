@@ -14,7 +14,7 @@ function App() {
         <div className="App">
         <div className="header">
             <div className="mark">
-                <a><Link to="/">LinSJ Studio</Link></a>
+                <div><Link to="/">LinSJ Studio</Link></div>
             </div>   
             <div className="cen">
                 <div><Link to="/">Home</Link></div>
