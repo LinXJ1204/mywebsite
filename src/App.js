@@ -7,6 +7,7 @@ import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
 import {store} from './store';
 import {gallery} from './gallery/gallerySlice';
 import {About} from './about/about';
+import {pageSlice} from './gallery/pageSlice'
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
             <div className="cen">
                 <div><Link to="/">Home</Link></div>
                 <div className="about"><Link to="/about">About</Link></div>
-                <div className='gallery' onClick={()=>(store.dispatch(gallery.actions.getall()))}>
+                <div className='gallery' onClick={()=>{
+                    store.dispatch(gallery.actions.getall());
+                    store.dispatch(pageSlice.actions.firstpage());}}>
                     <Link to="/gallery">Gallery</Link>
                 </div>
                 <div className="equipment"><Link to="/equipment">Equipment</Link></div>
