@@ -5,13 +5,23 @@ import { store } from "../store";
 import "animate.css";
 
 const filmlist = ['Kodak portra400', 'Forma pan400', 'Kodak portra160', 'Kentmere400', 'Kodak 500T', 'Ilford delta3200', 'Ilford delta400', 'Kodak E100', 'Kodak Ekar100']
-
+const digitallist = [];
 
 
 export function Extendfilm(){
     return(
         <ul>
             {filmlist.map((item)=>(
+                <h1 className="animate__animated animate__slideInDown"><li key={item}>{item}</li></h1>
+            ))}
+        </ul>
+    )
+}
+
+export function Extenddigital(){
+    return(
+        <ul>
+            {digitallist.map((item)=>(
                 <h1 className="animate__animated animate__slideInDown"><li key={item}>{item}</li></h1>
             ))}
         </ul>

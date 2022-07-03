@@ -9,6 +9,8 @@ import {gallery} from './gallery/gallerySlice';
 import {About} from './about/about';
 import {pageSlice} from './gallery/pageSlice'
 
+
+
 function App() {
   return (
     <BrowserRouter>

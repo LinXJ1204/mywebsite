@@ -4,7 +4,7 @@ import { configureStore, createSlice } from '@reduxjs/toolkit'
 import './gallery.css';
 import { store } from "../store";
 import { gallery, getfilm, getdigital } from "./gallerySlice";
-import { gallerysidebarfilmSlice, gallerysidebardigitalSlice, Extendfilm } from "./gallerysidebar";
+import { gallerysidebarfilmSlice, gallerysidebardigitalSlice, Extendfilm, Extenddigital } from "./gallerysidebar";
 import { Photolist } from "./page";
 import {Pagecontroler} from "./pagecontroler";
 import { pageSlice } from "./pageSlice";
@@ -46,7 +46,7 @@ const Gallerycomponent = () =>{
                                 <button onClick={()=>(store.dispatch(gallerysidebardigitalSlice.actions.toggle()))}>{!digitaltoggle&&<img src={require('../photo/angle-small-right-free-icon-font.png')}></img>}{digitaltoggle&&<img src={require('../photo/angle-small-down-free-icon-font.png')}></img>}</button>
                             </div>
                             <ul className='childlist'>
-                                {digitaltoggle&&<Extendfilm />}
+                                {digitaltoggle&&<Extenddigital />}
                             </ul>
                         </li>
                         <li>
