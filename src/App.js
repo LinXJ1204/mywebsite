@@ -17,24 +17,24 @@ function App() {
         <div className="App">
         <div className="header">
             <div className="mark">
-                <div><Link to="/">LinSJ Studio</Link></div>
+                <div><Link to="mywebsite/">LinSJ Studio</Link></div>
             </div>   
             <div className="cen">
-                <div><Link to="/">Home</Link></div>
-                <div className="about"><Link to="/about">About</Link></div>
+                <div><Link to="mywebsite/">Home</Link></div>
+                <div className="about"><Link to="mywebsite/about">About</Link></div>
                 <div className='gallery' onClick={()=>{
                     store.dispatch(gallery.actions.getall());
                     store.dispatch(pageSlice.actions.firstpage());}}>
-                    <Link to="/gallery">Gallery</Link>
+                    <Link to="mywebsite/gallery">Gallery</Link>
                 </div>
-                <div className="equipment"><Link to="/equipment">Equipment</Link></div>
+                <div className="equipment"><Link to="mywebsite/equipment">Equipment</Link></div>
             </div>
             
         </div>
         <Routes>
-            <Route path="/" element={<Bodycomponent />} />
-            <Route path="/gallery" element={<Gallerycomponent reset={true}/>}></Route>
-            <Route path='/about' element={<About />}></Route>
+            <Route path="mywebsite/" element={<Bodycomponent />} />
+            <Route path="mywebsite/gallery" element={<Gallerycomponent reset={true}/>}></Route>
+            <Route path='mywebsite/about' element={<About />}></Route>
         </Routes>
         
         
