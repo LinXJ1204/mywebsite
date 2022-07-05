@@ -7,11 +7,12 @@ export function Moreinfo(){
     const photodisplay = useSelector(()=>{return store.getState()['moreinfo'].photo});
     return(
         <div>
-            <div className="infobackground"></div>
-                <div className="morephotoinfo">
-                    <img className='infophoto' src={require(`../photo/${photodisplay}`)}></img>
-                    <div className="infotext">
+            <div className="infobackground tilt-in-fwd-tr"></div>
+                <div className="morephotoinfo tilt-in-fwd-tr">
+                    <img className='infophoto tilt-in-fwd-tr' src={require(`../photo/${photodisplay}`)}></img>
+                    <div className="infotext tilt-in-fwd-tr">
                         <ul>
+                            <li><h1>{photodisplay.split('.')[0]}</h1></li>
                             <li>FocalLength:</li>
                             <li>FNumber:</li>
                             <li>ShutterSpeedValue:</li>

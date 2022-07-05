@@ -11,6 +11,7 @@ import { pageSlice } from "./pageSlice";
 import { Moreinfo } from "./moreinfo";
 import { moreinfoSlice } from "./moreinfoSlice";
 import "animate.css";
+import "../animista.css"
 
 const directicon = ['../photo/angle-small-right-free-icon-font.png', '../photo/angle-small-down-free-icon-font.png'];
 

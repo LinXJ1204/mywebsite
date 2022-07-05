@@ -7,7 +7,8 @@ import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
 import {store} from './store';
 import {gallery} from './gallery/gallerySlice';
 import {About} from './about/about';
-import {pageSlice} from './gallery/pageSlice'
+import {pageSlice} from './gallery/pageSlice';
+import {moreinfoSlice} from './gallery/moreinfoSlice';
 
 
 
@@ -24,7 +25,8 @@ function App() {
                 <div className="about"><Link to="mywebsite/about">About</Link></div>
                 <div className='gallery' onClick={()=>{
                     store.dispatch(gallery.actions.getall());
-                    store.dispatch(pageSlice.actions.firstpage());}}>
+                    store.dispatch(pageSlice.actions.firstpage());
+                    store.dispatch(moreinfoSlice.actions.closed())}}>
                     <Link to="mywebsite/gallery">Gallery</Link>
                 </div>
                 <div className="equipment"><Link to="mywebsite/equipment">Equipment</Link></div>

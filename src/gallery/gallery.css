@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=Tiro+Devanagari+Marathi&display=swap');
 
+
 .galleryheader{
     text-align: right;
     padding: 0 10% 0 10%;
@@ -199,7 +200,12 @@
 .infotext{
     max-width: 30%;
     color: #fff;
-    padding: 5% 0%;
+    padding: 5% 0;
+}
+
+.infotext li{
+    list-style-type:none;
+    margin-top: 25px;
 }
 
 .closedinfo{
@@ -207,11 +213,13 @@
     position: fixed;
     width: 40px;
     height: 40px;
-    right: 7%;
-    top: 7%;
+    right: 1%;
+    top: 2%;
     opacity: 85%;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+
 }
 
 .closedinfo:hover{
@@ -220,4 +228,9 @@
 
 .closedinfo img{
     object-fit: fill;
+}
+
+.tilt-in-fwd-tr {
+	-webkit-animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
