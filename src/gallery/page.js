@@ -12,7 +12,11 @@ export function Photolist(){
         <div className="photolist">
            {
             photolist.filter(item=> (photolist.indexOf(item)>=((pagecount-1)*15))&&(photolist.indexOf(item)<pagecount*15)).map((item)=>(
-                <img key={item} src={require(`../photo/${item}`)} />
+                <div className="photo" key={item}>
+                    <img  src={require(`../photo/${item}`)} />
+                    <div className="photoinfo"><a>{item.split('.')[0]}</a></div>
+                </div>
+                
             ))
            }
         </div>

@@ -21,7 +21,6 @@
     width: 300px;
     height: 300px;
     object-fit: scale-down;
-    margin: 1% 2%;
 }
 
 
@@ -43,11 +42,16 @@
     align-content: flex-start;
 }
 
-.photolist img{
+
+.photo {
+    display: flex;
     box-shadow: 5px 5px 15px #22201e;
+    margin: 1% 2%;
+    justify-content:center; 
+    align-items:center;
 }
 
-.photolist img:hover{
+.photo:hover{
     box-shadow: none;
 }
 
@@ -129,3 +133,21 @@
     max-width: 12px;
     max-height: 12px;
 }
+
+.photoinfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    background-color: #363331;
+    min-width: 300px;
+    min-height: 300px;
+    opacity: 0%;
+}
+
+.photoinfo:hover {
+    opacity: 75%;
+}
+

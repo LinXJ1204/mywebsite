@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState} from "react";
 import {useSelector, useDispatch, Provider} from "react-redux";
-import { configureStore, createSlice } from '@reduxjs/toolkit'
+import { configureStore, createSlice } from '@reduxjs/toolkit';
 import './gallery.css';
 import { store } from "../store";
 import { gallery, getfilm, getdigital } from "./gallerySlice";
@@ -21,9 +21,7 @@ const Gallerycomponent = () =>{
     return(
         <div>
             <div className="galleryheader">
-                <div className="galleryborder">
-                    
-                </div>
+                <div className="galleryborder"></div>
             </div>
             
             <div className="gallerycontent">
