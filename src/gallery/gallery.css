@@ -145,9 +145,79 @@
     min-width: 300px;
     min-height: 300px;
     opacity: 0%;
+    flex-direction: column;
 }
 
 .photoinfo:hover {
     opacity: 75%;
 }
 
+.photoinfo a{
+    margin-bottom: 25%;
+}
+
+.moreinfobutton{
+    cursor: pointer;
+}
+
+.morephotoinfo{
+    display: flex;
+    position: fixed;
+    min-width: 90%;
+    min-height: 90%;
+    max-height: 90%;
+    z-index: 2;
+    top: 5%;
+    bottom: 5%;
+    left: 5%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+.morephotoinfo img{
+    min-width: 66%;
+    max-width: 66%;
+    max-height: 95%;
+    margin: 2%;
+    object-fit: scale-down;
+
+}
+
+.infobackground{
+    background-color: #22201e;
+    position: fixed;
+    min-width: 90%;
+    min-height: 90%;
+    z-index: 2;
+    top: 5%;
+    bottom: 5%;
+    left: 5%;
+    opacity: 95%;
+}
+
+.infotext{
+    max-width: 30%;
+    color: #fff;
+    padding: 5% 0%;
+}
+
+.closedinfo{
+    display: flex;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    right: 7%;
+    top: 7%;
+    opacity: 85%;
+    justify-content: center;
+    align-items: center;
+}
+
+.closedinfo:hover{
+    background-color: #363331;
+}
+
+.closedinfo img{
+    object-fit: fill;
+}

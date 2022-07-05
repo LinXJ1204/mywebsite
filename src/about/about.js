@@ -19,6 +19,9 @@ export function About(){
                         <h1>Jhengwei-Lin</h1>
                         <a>aka. 少傑zz</a>
                     </div>
+                    <div className="habbit">
+
+                    </div>
                 </div>
             </div>
             

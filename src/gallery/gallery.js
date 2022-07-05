@@ -8,6 +8,8 @@ import { gallerysidebarfilmSlice, gallerysidebardigitalSlice, Extendfilm, Extend
 import { Photolist } from "./page";
 import {Pagecontroler} from "./pagecontroler";
 import { pageSlice } from "./pageSlice";
+import { Moreinfo } from "./moreinfo";
+import { moreinfoSlice } from "./moreinfoSlice";
 import "animate.css";
 
 const directicon = ['../photo/angle-small-right-free-icon-font.png', '../photo/angle-small-down-free-icon-font.png'];
@@ -16,8 +18,10 @@ const Gallerycomponent = () =>{
     const photolist = useSelector(()=> {return store.getState('photo').gallery});
     const digitaltoggle = useSelector(()=>{return store.getState()['gallerysidebardigital']});
     const filmtoggle = useSelector(()=>{return store.getState()['gallerysidebarfilm']});
+    const moreinfo = useSelector(()=>{return store.getState()['moreinfo'].open});
     useEffect(()=>{store.dispatch(gallery.actions.getall)},[]);
     //test
+    console.log(moreinfo);
     return(
         <div>
             <div className="galleryheader">
@@ -67,6 +71,7 @@ const Gallerycomponent = () =>{
                 </div>
                 
             </div>
+            {moreinfo&&<Moreinfo />}
             <Pagecontroler className='pagecontoler'/>
         </div>
         
