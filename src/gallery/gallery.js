@@ -11,7 +11,7 @@ import { pageSlice } from "./pageSlice";
 import { Moreinfo } from "./moreinfo";
 import { moreinfoSlice } from "./moreinfoSlice";
 import "animate.css";
-import "../animista.css"
+import "../animista.css";
 
 const directicon = ['../photo/angle-small-right-free-icon-font.png', '../photo/angle-small-down-free-icon-font.png'];
 
@@ -22,7 +22,6 @@ const Gallerycomponent = () =>{
     const moreinfo = useSelector(()=>{return store.getState()['moreinfo'].open});
     useEffect(()=>{store.dispatch(gallery.actions.getall)},[]);
     //test
-    console.log(moreinfo);
     return(
         <div>
             <div className="galleryheader">
