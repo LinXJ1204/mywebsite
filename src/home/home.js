@@ -25,7 +25,7 @@ function Bodycomponent() {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide><div className="containimg"><img src={require("../photo/04.jpg")}/></div></SwiperSlide>
+        <SwiperSlide><img src={require("../photo/04.jpg")}/></SwiperSlide>
         <SwiperSlide><img src={require("../photo/01.jpg")}/></SwiperSlide>
         <SwiperSlide><img src={require("../photo/02.jpg")}/></SwiperSlide>
         <SwiperSlide><img src={require("../photo/03.jpg")}/></SwiperSlide>
